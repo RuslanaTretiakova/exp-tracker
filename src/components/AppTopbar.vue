@@ -5,13 +5,17 @@
     </template>
 
     <template #end>
-      <Button
-        severity="success"
-        variant="outlined"
-        :icon="isDark ? 'pi pi-sun' : 'pi pi-moon'"
-        @click="toggleTheme"
-        aria-label="Toggle Theme"
-      />
+      <div class="flex items-center gap-5">
+        <FileUploader />
+        <Button
+          severity="success"
+          class="flex-none"
+          variant="outlined"
+          :icon="isDark ? 'pi pi-sun' : 'pi pi-moon'"
+          @click="toggleTheme"
+          aria-label="Toggle Theme"
+        />
+      </div>
     </template>
   </Toolbar>
 </template>
@@ -20,6 +24,7 @@
 import { ref } from 'vue'
 import Toolbar from 'primevue/toolbar'
 import Button from 'primevue/button'
+import FileUploader from './FileUploader.vue'
 
 const isDark = ref<boolean>(false)
 
