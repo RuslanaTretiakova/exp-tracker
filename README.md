@@ -1,6 +1,16 @@
 # Experiment Tracker
 
+A simple web app for uploading, visualizing, and comparing machine learning experiment logs.
+
 [Live Demo](https://experiment-tracker.netlify.app/)
+
+## ✨ Features
+- Upload CSV files with experiment logs
+- Visualize tracked metrics as interactive line charts
+- Select one or multiple experiments for comparison
+- Compare metric trends across multiple experiments
+- Responsive layout for desktop and mobile
+- Light/Dark theme toggle
 
 ## 💻 Technology Stack
 
