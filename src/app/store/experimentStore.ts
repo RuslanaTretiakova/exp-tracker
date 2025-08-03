@@ -1,9 +1,10 @@
 import { defineStore } from 'pinia'
+import { reactive } from 'vue'
 import type { ParsedData } from '../../types/types'
 
 export const useExperimentStore = defineStore('experiment', {
   state: () => ({
-    parsed: {} as ParsedData,
+    parsed: reactive({}) as ParsedData,
     loading: false,
     error: '',
     selectedIds: [] as string[],

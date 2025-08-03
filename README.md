@@ -5,13 +5,13 @@
 ## 💻 Technology Stack
 
 - **Vue 3**
-- **TypeScript** 
+- **TypeScript**
 - **Vite**
 - **Pinia**
-- **PrimeVue** 
-- **Tailwind CSS** 
+- **PrimeVue**
+- **Tailwind CSS**
 - **Chart.js**
-- **PapaParse** 
+- **PapaParse**
 - **Husky** , **Prettier** , **ESLint**
 
 ## 🚀 Getting Started
