@@ -51,12 +51,14 @@ const { splitterLayout } = useSplitterLayout()
 .layout {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
 }
 
 .layout :deep(.p-splitter) {
   flex: 1;
-  height: 100%;
+  min-height: 100vh;
+  height: auto;
 }
 
 .layout :deep(.p-splitter-panel) {
