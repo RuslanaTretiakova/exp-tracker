@@ -6,6 +6,7 @@ export const useExperimentStore = defineStore('experiment', {
     parsed: {} as ParsedData,
     loading: false,
     error: '',
+    selectedIds: [] as string[],
   }),
 
   actions: {
@@ -17,6 +18,9 @@ export const useExperimentStore = defineStore('experiment', {
     },
     setError(message: string) {
       this.error = message
+    },
+    setSelectedIds(ids: string[]) {
+      this.selectedIds = ids
     },
     reset() {
       this.parsed = {}
